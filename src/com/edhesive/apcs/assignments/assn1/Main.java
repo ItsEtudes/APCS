@@ -2,6 +2,17 @@ package com.edhesive.apcs.assignments.assn1;
 
 import java.util.Scanner;
 
+/**
+ * This program takes in various movie ratings from different groups. It takes the following:
+ *  - 3 ratings from a review website
+ *  - 2 ratings from a focus group
+ *  - 1 average rating from movie critics
+ *
+ *  It takes these ratings and creates an overall weighted average score for the movie:
+ *  - The website rating counts for 20% of the score
+ *  - The focus group rating counts for 30% of the score
+ *  - The movie critic rating counts for 50% of the score
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -19,6 +30,7 @@ public class Main {
         System.out.println("Please enter the average movie critic rating.");
         double criticAverage = scan.nextDouble();
 
+        // Get the averages from the website and focus group ratings
         double webAverage = (double) (web1 + web2 + web3) / 3;
         double focusAverage = (focus1 + focus2) / 2;
 
@@ -26,6 +38,7 @@ public class Main {
         System.out.println("Average focus group rating: " + focusAverage);
         System.out.println("Average movie critic rating: " + criticAverage);
 
+        // Calculate the weighted average
         double overallAverage = (webAverage * 0.2) + (focusAverage * 0.3) + (criticAverage * 0.5);
         System.out.println("Overall movie rating: " + overallAverage);
     }
