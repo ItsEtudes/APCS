@@ -3,7 +3,7 @@ package com.edhesive.apcs.assignments.assn4;
 import java.util.Scanner;
 
 /**
- * Assignment 3: String Shortener
+ * Assignment 4: String Shortener
  *
  * This program takes in a message, and modifies the message to
  * make it shorter and more efficient assuming the message is
