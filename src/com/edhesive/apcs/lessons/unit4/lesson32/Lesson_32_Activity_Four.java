@@ -23,9 +23,6 @@ package com.edhesive.apcs.lessons.unit4.lesson32;
 import java.util.Scanner;
 
 class Lesson_32_Activity_Four {
-    public static void main(String[] args) {
-        realTime(6342);
-    }
 
     public static void realTime(int nSeconds) {
             int nHours = nSeconds / 3600;
@@ -36,4 +33,5 @@ class Lesson_32_Activity_Four {
             System.out.println("Minutes: " + nMinutes);
             System.out.println("Seconds: " + nSeconds);
     }
+
 }

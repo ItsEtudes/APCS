@@ -20,9 +20,6 @@ import java.util.Scanner;
 
 class Lesson_32_Activity_One {
 
-    public static void main(String[] args) {
-    }
-
     public static void monthName(int month) {
         switch(month) {
             case 1:

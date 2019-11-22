@@ -21,9 +21,6 @@ import java.util.Scanner;
 
 class Lesson_32_Activity_Two {
 
-    public static void main(String[] args) {
-    }
-
     public static void monthDays(int month) {
         if(month == 2) {
             System.out.println(28);

@@ -19,9 +19,6 @@ package com.edhesive.apcs.lessons.unit4.lesson32;
 import java.util.Scanner;
 
 class Lesson_32_Activity_Three {
-    public static void main(String[] args) {
-        swap(3, 7);
-    }
 
     public static void swap(int a, int b) {
         // this isn't how you're supposed to do it
@@ -34,4 +31,5 @@ class Lesson_32_Activity_Three {
         and then print, but I wanted to see if this would pass the test and it did
          */
     }
+
 }
