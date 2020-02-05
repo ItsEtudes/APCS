@@ -8,8 +8,6 @@ public class Main {
         Magpie magpie = new Magpie();
         Scanner scanner = new Scanner(System.in);
 
-
-
         String input;
         while(!((input = scanner.nextLine()).toLowerCase().equals("bye"))) {
             System.out.println(magpie.getResponse(input));
