@@ -6,7 +6,7 @@ public class ChatBotUtils {
     }
 
     public static int getRandomIndex(int min, int max) {
-        return (int) (Math.random() * (max + 1)) + min;
+        return (int) (Math.random() * (max)) + min;
     }
 
     public static String convertToMockingTone(String message) {

@@ -7,6 +7,7 @@ public class Magpie {
     private ArrayList<String> greetings;
     private ArrayList<String> startUpMessages;
     private ArrayList<String> questionAnswers;
+    private ArrayList<String> genericAnswers;
 
     public Magpie() {
         greetings = new ArrayList<>();
@@ -33,6 +34,15 @@ public class Magpie {
         questionAnswers.add("That's a very serious question. I'd love to help you, but " +
                 "I just really don't care");
 
+        genericAnswers = new ArrayList<>();
+        genericAnswers.add("Beep beep. Boop boop.");
+        genericAnswers.add("zzzzZZZZZ... zzzZZZZZ... Oh, sorry did you say something?");
+        genericAnswers.add("Ok Boomer");
+        genericAnswers.add("Picture this: you go bother someone else");
+        genericAnswers.add("Never gonna give you up. Never gonna let you down");
+        genericAnswers.add("Jeffrey Epstein didn't kill himself");
+        genericAnswers.add("Do you ever wonder why people say \"Melk\" instead of \"Milk?\"");
+
         int randomIndex = ChatBotUtils.getRandomIndex(0, 4);
         System.out.println(startUpMessages.get(randomIndex));
     }
@@ -40,23 +50,34 @@ public class Magpie {
     public String getResponse(String input) {
         input = input.toLowerCase();
 
+        // 1 in 5 chance to mock
+        int randInt = (int) (Math.random() * 5);
+        if(randInt == 1) {
+            return ChatBotUtils.convertToMockingTone(input);
+        }
+
         // check for greeting
         if(input.contains("hello") || input.contains("hi")) {
             return getRandomGreeting();
         } else if(input.contains("?")) {
             return getRandomQuestionAnswer();
         }
-        return ChatBotUtils.convertToMockingTone(input);
+        return getRandomGenericAnswer();
     }
 
     private String getRandomGreeting() {
-        int index = ChatBotUtils.getRandomIndex(0, 4);
+        int index = ChatBotUtils.getRandomIndex(0, 5);
         return greetings.get(index);
     }
 
     private String getRandomQuestionAnswer() {
-        int index = ChatBotUtils.getRandomIndex(0, 2);
+        int index = ChatBotUtils.getRandomIndex(0, 3);
         return questionAnswers.get(index);
+    }
+
+    private String getRandomGenericAnswer() {
+        int index = ChatBotUtils.getRandomIndex(0, 7);
+        return genericAnswers.get(index);
     }
 
 }
