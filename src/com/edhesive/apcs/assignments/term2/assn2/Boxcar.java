@@ -3,6 +3,14 @@ package com.edhesive.apcs.assignments.term2.assn2;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Term 2: Assignment 2: Boxcar
+ * This class is meant to represent a boxcar in a train. Each instnace
+ * has a cargo type (gizmos, gadgets, widgets, or wadgets), number
+ * of units (between 0 and 10 inclusive) and a boolean value
+ * which determines whether or not the boxcar is in repair.
+ * If the boxcar is in repair, it cannot store any units.
+ */
 public class Boxcar {
 
     private static final List<String> CARGO_TYPES = Arrays.asList("gizmos", "gadgets", "widgets", "wadgets");
