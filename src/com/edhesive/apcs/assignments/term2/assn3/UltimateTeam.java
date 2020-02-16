@@ -75,6 +75,7 @@ public class UltimateTeam {
             result.append(coach.toString());
             result.append("\n");
         }
+        result.append("\n");
         // list players
         result.append("PLAYERS\n");
         for(UltimatePlayer player : players) {
