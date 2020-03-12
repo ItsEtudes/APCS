@@ -67,10 +67,18 @@ public class Deck {
     }
 
     /**
-     * TODO: implement shuffle method (Activity 4)
+     * This method shuffles the deck of cards using the efficient
+     * selection shuffle shown in activity 3
      */
     public void shuffle() {
-
+        size = cards.size();
+        for(int k = size - 1; k > 0; k--) {
+            int r = (int) (Math.random() * (k + 1));
+            // swap cards
+            Card temp = cards.get(r);
+            cards.set(r, cards.get(k));
+            cards.set(k, temp);
+        }
     }
 
     @Override
