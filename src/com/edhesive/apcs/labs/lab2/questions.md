@@ -57,5 +57,5 @@ arrays differ only in how their contents are arranged). Otherwise, it should ret
 3. Suppose that the initial contents of the values array in `Shuffler.java` are `{1, 2, 3,
 4}`. For what sequence of random integers would the efficient selection shuffle change values to
 contain `{4, 3, 2, 1}`?
-    - `{0, 1, 1}`; after the first iteration, the array becomes `{4, 2, 3, 1}`. After the second, the it becomes
+    - `{0, 1, 1}`; after the first iteration, the array becomes `{4, 2, 3, 1}`. After the second, it becomes
     `{4, 3, 2, 1}`. The last iteration does nothing since it swaps indices `1` and `1`.
