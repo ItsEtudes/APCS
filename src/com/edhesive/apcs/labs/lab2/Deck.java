@@ -73,4 +73,15 @@ public class Deck {
 
     }
 
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        result.append("[");
+        for(Card c : cards) {
+            result.append(c);
+            result.append(", ");
+        }
+        result.append("]");
+        return result.toString();
+    }
 }
