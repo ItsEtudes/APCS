@@ -2,6 +2,14 @@ package com.edhesive.apcs.labs.lab2;
 
 import java.util.ArrayList;
 
+/**
+ * Board class (Lab 2: Elevens)
+ *
+ * This class represents a board used to play a game of elevens. It
+ * stores a deck, a list of cards currently on the table, and numbers
+ * of cards to deal / pair sums. Board also has methods useful for
+ * implementing a game of elevens
+ */
 public class Board {
 
     private Deck deck;
