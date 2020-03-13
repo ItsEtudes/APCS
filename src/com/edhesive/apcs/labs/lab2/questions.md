@@ -59,3 +59,20 @@ arrays differ only in how their contents are arranged). Otherwise, it should ret
 contain `{4, 3, 2, 1}`?
     - `{0, 1, 1}`; after the first iteration, the array becomes `{4, 2, 3, 1}`. After the second, it becomes
     `{4, 3, 2, 1}`. The last iteration does nothing since it swaps indices `1` and `1`.
+
+## Activity 4: No questions
+
+## Activity 5: No questions
+
+## Activity 6:
+1. List all possible plays for the board `5♠ 4♥ 2♦ 6♣ A♠ J♥ K♦ 5♣ 2♠`
+    - 5♠ and 6♣, or 5♣ and 6♣
+2. If the deck is empty and the board has three cards left, must they be J, Q, and K? Why or why not?
+    - Yes; since jacks, queens, and kings cannot be removed as pairs (their values are all 11 or greater), they can only
+    be removed as sets of 3. There is also an even number of cards, and cards are only removed in pairs with the only
+    exception being face card triple removals. Thus, if there are three cards left, they must be a jack, queen, and king
+    because it is the only possible way there can be an odd number of cards left
+3. Does the game involve any strategy? That is, when more than one play is possible, does it matter
+which one is chosen? Briefly explain your answer.
+    - Although different pairs of cards can depend on each other, there is no way of predicting which cards will come 
+    next, so there is no strategy involved.
