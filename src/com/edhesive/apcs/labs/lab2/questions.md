@@ -76,3 +76,6 @@ contain `{4, 3, 2, 1}`?
 which one is chosen? Briefly explain your answer.
     - Although different pairs of cards can depend on each other, there is no way of predicting which cards will come 
     next, so there is no strategy involved.
+
+## Activity 7 questions:
+- I've skipped these questions since they refer to the sample code which I am not using for this lab
