@@ -87,4 +87,11 @@ public class Board {
         return deck.isEmpty() && currentCards.isEmpty();
     }
 
+    /**
+     * Getter for list of current cards
+     * @return list of current cards
+     */
+    public ArrayList<Card> getCurrentCards() {
+        return currentCards;
+    }
 }
